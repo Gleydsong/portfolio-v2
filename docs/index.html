@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>GuiDev | Desenvolvedor Full Stack</title>
+    <meta
+      name="description"
+      content="Portfólio de GuiDev — projetos Full Stack e contato. React, Node.js, TypeScript, Docker e PostgreSQL."
+    />
+    <meta name="robots" content="index,follow" />
+
+    <meta property="og:title" content="GuiDev | Desenvolvedor Full Stack" />
+    <meta
+      property="og:description"
+      content="Projetos e contato. Desenvolvimento web moderno com foco em backend."
+    />
+    <meta property="og:type" content="website" />
+
+    <link rel="icon" type="image/x-icon" href="/portfolio-v2/assets/favicon-DzNWMvAv.ico" />
+
+    <!-- Fonts (opcional) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <script type="module" crossorigin src="/portfolio-v2/assets/index-ybVtAkNJ.js"></script>
+    <link rel="stylesheet" crossorigin href="/portfolio-v2/assets/index-BzPtLdUS.css">
+  </head>
+
+  <body>
+    <a class="skip-link" href="#main">Pular para o conteúdo</a>
+
+    <!-- Header -->
+    <header class="header" id="header">
+      <div class="container header__inner">
+        <a
+          class="brand"
+          href="https://www.linkedin.com/in/gleydsongibson/"
+          aria-label="Ir para o topo"
+        >
+          <span class="brand__mark">G</span
+          ><span class="brand__text">uiDev</span>
+        </a>
+
+        <nav class="nav" id="nav" aria-label="Navegação principal">
+          <ul class="nav__list">
+            <li>
+              <a class="nav__link is-active" href="#hero" data-section="hero"
+                >Início</a
+              >
+            </li>
+            <li>
+              <a class="nav__link" href="#about" data-section="about">Sobre</a>
+            </li>
+            <li>
+              <a class="nav__link" href="#skills" data-section="skills"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a class="nav__link" href="#projects" data-section="projects"
+                >Projetos</a
+              >
+            </li>
+          </ul>
+
+          <a class="btn btn--primary btn--sm nav__cta" href="#contact"
+            >Fale comigo</a
+          >
+        </nav>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          type="button"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="nav"
+        >
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+          <span class="nav-toggle__bar"></span>
+        </button>
+      </div>
+
+      <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    </header>
+
+    <main id="main">
+      <!-- Hero -->
+      <section class="section hero" id="hero">
+        <div class="container hero__grid">
+          <div class="hero__content">
+            <p class="kicker"><span class="mono">&lt;Olá, mundo /&gt;</span></p>
+            <h1 class="hero__title">
+              Eu sou <span class="text-gradient">GuiDev</span><br />
+              <span class="hero__subtitle">Desenvolvedor Full Stack</span>
+            </h1>
+
+            <p class="hero__lead">
+              Construo produtos web com foco em backend: APIs, autenticação,
+              banco de dados e deploy.
+            </p>
+
+            <div class="hero__actions">
+              <a class="btn btn--primary btn--lg" href="#projects"
+                >Ver projetos</a
+              >
+            </div>
+
+            <div class="hero__meta">
+              <span class="pill">Node.js</span>
+              <span class="pill">TypeScript</span>
+              <span class="pill">PostgreSQL</span>
+              <span class="pill">Docker</span>
+            </div>
+          </div>
+
+          <div class="hero__panel" aria-hidden="true">
+            <div class="codecard">
+              <div class="codecard__top">
+                <span class="dot dot--red"></span>
+                <span class="dot dot--yellow"></span>
+                <span class="dot dot--green"></span>
+                <span class="codecard__title">api/status.ts</span>
+              </div>
+              <pre
+                class="codecard__body"
+              ><code class="mono">export const health = () =&gt; ({
+  available: true,
+  service: "portfolio-api",
+  uptime: process.uptime(),
+});</code></pre>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__decor hero__decor--tl" aria-hidden="true"></div>
+        <div class="hero__decor hero__decor--br" aria-hidden="true"></div>
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about">
+        <div class="container">
+          <header class="section__head">
+            <h2 class="section__title">
+              Sobre <span class="text-gradient">mim</span>
+            </h2>
+            <p class="section__subtitle">Curto, direto e orientado a valor.</p>
+          </header>
+
+          <div class="grid-2" id="aboutGrid">
+            <div class="card">
+              <h3 class="card__title">O que eu faco</h3>
+              <p class="card__text">
+                Desenvolvo aplicacoes web completas, com foco em backend
+                (Node.js/TypeScript), integracao com banco de dados,
+                autenticacao e deploy com Docker.
+              </p>
+            </div>
+
+            <div class="card">
+              <h3 class="card__title">Como eu trabalho</h3>
+              <ul class="list">
+                <li>Arquitetura simples, incremental e testavel.</li>
+                <li>Validacao e contratos (DTOs + Zod) para reduzir bugs.</li>
+                <li>Boas praticas: logs, erros, seguranca basica e DX.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section" id="skills">
+        <div class="container">
+          <header class="section__head">
+            <h2 class="section__title">
+              Minhas <span class="text-gradient">skills</span>
+            </h2>
+            <p class="section__subtitle">Stack focada em produtos reais.</p>
+          </header>
+
+          <div class="cards-3" id="skillsGrid">
+            <article class="card card--icon">
+              <div class="icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="22"
+                  height="22"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M4 5h16v14H4z" />
+                  <path d="M8 9h8" />
+                  <path d="M8 13h6" />
+                </svg>
+              </div>
+              <h3 class="card__title">Frontend</h3>
+              <ul class="list">
+                <li>React / Next.js</li>
+                <li>TypeScript</li>
+                <li>Tailwind / CSS</li>
+                <li>Acessibilidade</li>
+              </ul>
+            </article>
+
+            <article class="card card--icon">
+              <div class="icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="22"
+                  height="22"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M12 2l4 7H8l4-7Z" />
+                  <path d="M7 9h10l1 13H6L7 9Z" />
+                </svg>
+              </div>
+              <h3 class="card__title">Backend</h3>
+              <ul class="list">
+                <li>Node.js / Express</li>
+                <li>Prisma ORM</li>
+                <li>PostgreSQL</li>
+                <li>JWT + RBAC</li>
+              </ul>
+            </article>
+
+            <article class="card card--icon">
+              <div class="icon" aria-hidden="true">
+                <svg
+                  viewBox="0 0 24 24"
+                  width="22"
+                  height="22"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                >
+                  <path d="M4 6h16" />
+                  <path d="M4 12h16" />
+                  <path d="M4 18h16" />
+                </svg>
+              </div>
+              <h3 class="card__title">DevOps</h3>
+              <ul class="list">
+                <li>Docker / Compose</li>
+                <li>CI/CD</li>
+                <li>Logs e monitoramento</li>
+                <li>Deploy (Render/Vercel)</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section class="section" id="projects">
+        <div class="container">
+          <header class="section__head">
+            <h2 class="section__title">
+              Meus <span class="text-gradient">projetos</span>
+            </h2>
+            <p class="section__subtitle">
+              Cards com prova: problema, stack e links.
+            </p>
+          </header>
+
+          <div class="projects-grid" id="projectsGrid">
+            <article class="project">
+              <div class="project__media">
+                <div class="project__thumb" aria-hidden="true"></div>
+              </div>
+              <div class="project__body">
+                <h3 class="project__title">API Boilerplate</h3>
+                <p class="project__text">
+                  Base pronta: validacao com Zod, testes com Jest, logs e
+                  padronizacao de erros.
+                </p>
+                <div class="tags">
+                  <span class="tag">TypeScript</span><span class="tag">Zod</span
+                  ><span class="tag">Jest</span>
+                </div>
+                <div class="project__actions">
+                  <a
+                    class="btn btn--secondary btn--sm"
+                    href="#"
+                    target="_blank"
+                    rel="noopener"
+                    >Docs</a
+                  >
+                  <a
+                    class="btn btn--ghost btn--sm"
+                    href="#"
+                    target="_blank"
+                    rel="noopener"
+                    >Codigo</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="project">
+              <div class="project__media">
+                <div class="project__thumb" aria-hidden="true"></div>
+              </div>
+              <div class="project__body">
+                <h3 class="project__title">Plataforma de Chamados</h3>
+                <p class="project__text">
+                  Gestao de chamados com autenticacao, perfis
+                  (admin/tecnico/cliente) e agenda de disponibilidade.
+                </p>
+                <div class="tags">
+                  <span class="tag">Node</span><span class="tag">Prisma</span
+                  ><span class="tag">Postgres</span
+                  ><span class="tag">Docker</span>
+                </div>
+                <div class="project__actions">
+                  <a
+                    class="btn btn--secondary btn--sm"
+                    href="#"
+                    target="_blank"
+                    rel="noopener"
+                    >Demo</a
+                  >
+                  <a
+                    class="btn btn--ghost btn--sm"
+                    href="#"
+                    target="_blank"
+                    rel="noopener"
+                    >Codigo</a
+                  >
+                </div>
+              </div>
+            </article>
+            <article class="project">
+              <div class="project__media">
+                <div class="project__thumb" aria-hidden="true"></div>
+              </div>
+              <div class="project__body">
+                <h3 class="project__title">Painel de Analytics</h3>
+                <p class="project__text">
+                  Dashboard com graficos, filtros e exportacao para CSV, focado
+                  em indicadores de negocio.
+                </p>
+                <div class="tags">
+                  <span class="tag">React</span><span class="tag">Node</span
+                  ><span class="tag">Charts</span>
+                </div>
+                <div class="project__actions">
+                  <a
+                    class="btn btn--secondary btn--sm"
+                    href="#"
+                    target="_blank"
+                    rel="noopener"
+                    >Demo</a
+                  >
+                  <a
+                    class="btn btn--ghost btn--sm"
+                    href="#"
+                    target="_blank"
+                    rel="noopener"
+                    >Codigo</a
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section class="section" id="contact">
+        <div class="container max-w-2xl text-center">
+          <header class="section__head">
+            <h2 class="section__title">
+              Entre em <span class="text-gradient">contato</span>
+            </h2>
+            <p class="section__subtitle">
+              Objetivo: facilitar resposta rápida.
+            </p>
+          </header>
+
+          <div class="flex justify-center">
+            <div class="card w-full max-w-lg">
+              <h3 class="card__title">Canais</h3>
+
+              <div class="contact-list">
+                <a class="contact-item" href="mailto:ggleydson@icloud.com">
+                  <span class="icon" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      width="22"
+                      height="22"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M4 4h16v16H4z" />
+                      <path d="m4 6 8 7 8-7" />
+                    </svg>
+                  </span>
+                  <span>
+                    <strong>Email</strong><br />
+                    <span class="muted">ggleydson@icloud.com</span>
+                  </span>
+                </a>
+
+                <button
+                  class="contact-item contact-item--button"
+                  id="btnCopyEmail"
+                  type="button"
+                  data-copy="ggleydson@icloud.com"
+                >
+                  <span class="icon" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      width="22"
+                      height="22"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path d="M8 8h12v12H8z" />
+                      <path d="M4 4h12v12H4z" />
+                    </svg>
+                  </span>
+                  <span>
+                    <strong>Copiar e-mail</strong><br />
+                    <span class="muted" id="copyEmailHint"
+                      >Clique para copiar</span
+                    >
+                  </span>
+                </button>
+
+                <a
+                  class="contact-item"
+                  href="https://github.com/Gleydsong"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span class="icon" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      width="22"
+                      height="22"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M9 19c-4 1.5-4-2.5-5-3m10 6v-3.87c0-1.1.36-1.87 1-2.5-3.33-.37-6.83-1.64-6.83-7.3 0-1.6.57-2.9 1.5-3.93-.15-.37-.65-1.86.15-3.87 0 0 1.23-.39 4.03 1.5 1.17-.32 2.42-.48 3.66-.48 1.24 0 2.49.16 3.66.48 2.8-1.89 4.03-1.5 4.03-1.5.8 2.01.3 3.5.15 3.87.93 1.03 1.5 2.33 1.5 3.93 0 5.68-3.5 6.93-6.85 7.3.65.56 1.03 1.66 1.03 3.35V22"
+                      />
+                    </svg>
+                  </span>
+                  <span
+                    ><strong>GitHub</strong><br /><span class="muted"
+                      >github.com/Gleydsong</span
+                    ></span
+                  >
+                </a>
+
+                <a
+                  class="contact-item"
+                  href="https://linkedin.com/in/gleydsongibson"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  <span class="icon" aria-hidden="true">
+                    <svg
+                      viewBox="0 0 24 24"
+                      width="22"
+                      height="22"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                    >
+                      <path
+                        d="M16 8a6 6 0 0 1-6 6H4v-2h6a4 4 0 1 0 0-8H4V2h6a6 6 0 0 1 6 6z"
+                      />
+                      <path d="M20 22h-4v-7h4z" />
+                      <path d="M18 11h2v11h-2z" />
+                    </svg>
+                  </span>
+                  <span
+                    ><strong>LinkedIn</strong><br /><span class="muted"
+                      >linkedin.com/in/gleydsongibson/</span
+                    ></span
+                  >
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <p class="muted">
+          © <span id="year"></span> GuiDev. Feito com foco em produto.
+        </p>
+      </div>
+    </footer>
+
+  </body>
+</html>
