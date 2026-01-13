@@ -18,17 +18,17 @@
     />
     <meta property="og:type" content="website" />
 
-    <link rel="icon" type="image/x-icon" href="/assets/favicon-DzNWMvAv.ico" />
+    <link rel="icon" type="image/x-icon" href="/portfolio-v2/assets/favicon-DzNWMvAv.ico" />
 
     <!-- Fonts (opcional) -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&family=Orbitron:wght@600;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/assets/index-Dk-Q8Ydc.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-D0XDWsIR.css">
+    <script type="module" crossorigin src="/portfolio-v2/assets/index-ybVtAkNJ.js"></script>
+    <link rel="stylesheet" crossorigin href="/portfolio-v2/assets/index-BzPtLdUS.css">
   </head>
 
   <body>
@@ -37,7 +37,11 @@
     <!-- Header -->
     <header class="header" id="header">
       <div class="container header__inner">
-        <a class="brand" href="#hero" aria-label="Ir para o topo">
+        <a
+          class="brand"
+          href="https://www.linkedin.com/in/gleydsongibson/"
+          aria-label="Ir para o topo"
+        >
           <span class="brand__mark">G</span
           ><span class="brand__text">uiDev</span>
         </a>
@@ -60,12 +64,6 @@
             <li>
               <a class="nav__link" href="#projects" data-section="projects"
                 >Projetos</a
-              >
-            </li>
-
-            <li>
-              <a class="nav__link" href="#contact" data-section="contact"
-                >Contato</a
               >
             </li>
           </ul>
@@ -133,7 +131,7 @@
               <pre
                 class="codecard__body"
               ><code class="mono">export const health = () =&gt; ({
-  ok: true,
+  available: true,
   service: "portfolio-api",
   uptime: process.uptime(),
 });</code></pre>
@@ -378,7 +376,7 @@
 
       <!-- Contact -->
       <section class="section" id="contact">
-        <div class="container">
+        <div class="container max-w-2xl text-center">
           <header class="section__head">
             <h2 class="section__title">
               Entre em <span class="text-gradient">contato</span>
@@ -388,8 +386,8 @@
             </p>
           </header>
 
-          <div class="grid-2">
-            <div class="card">
+          <div class="flex justify-center">
+            <div class="card w-full max-w-lg">
               <h3 class="card__title">Canais</h3>
 
               <div class="contact-list">
@@ -467,7 +465,12 @@
                   >
                 </a>
 
-                <a class="contact-item" href="#" target="_blank" rel="noopener">
+                <a
+                  class="contact-item"
+                  href="https://linkedin.com/in/gleydsongibson"
+                  target="_blank"
+                  rel="noopener"
+                >
                   <span class="icon" aria-hidden="true">
                     <svg
                       viewBox="0 0 24 24"
@@ -486,58 +489,12 @@
                   </span>
                   <span
                     ><strong>LinkedIn</strong><br /><span class="muted"
-                      >adicione seu link</span
+                      >linkedin.com/in/gleydsongibson/</span
                     ></span
                   >
                 </a>
               </div>
             </div>
-
-            <form class="card form" id="contactForm" novalidate>
-              <h3 class="card__title">Mensagem</h3>
-              <p class="card__text muted">
-                Este form já está pronto para integrar com sua API.
-              </p>
-
-              <label class="field">
-                <span class="field__label">Nome</span>
-                <input
-                  class="field__input"
-                  name="name"
-                  autocomplete="name"
-                  required
-                />
-                <span class="field__error" data-error-for="name"></span>
-              </label>
-
-              <label class="field">
-                <span class="field__label">Email</span>
-                <input
-                  class="field__input"
-                  name="email"
-                  type="email"
-                  autocomplete="email"
-                  required
-                />
-                <span class="field__error" data-error-for="email"></span>
-              </label>
-
-              <label class="field">
-                <span class="field__label">Mensagem</span>
-                <textarea
-                  class="field__input field__input--textarea"
-                  name="message"
-                  rows="5"
-                  required
-                ></textarea>
-                <span class="field__error" data-error-for="message"></span>
-              </label>
-
-              <button class="btn btn--primary btn--lg btn--full" type="submit">
-                Enviar mensagem
-              </button>
-              <p class="muted mt-12" id="formHint"></p>
-            </form>
           </div>
         </div>
       </section>
@@ -548,11 +505,6 @@
         <p class="muted">
           © <span id="year"></span> GuiDev. Feito com foco em produto.
         </p>
-        <div class="footer__links">
-          <a href="https://github.com/Gleydsong" target="_blank" rel="noopener"
-            >GitHub</a
-          >
-        </div>
       </div>
     </footer>
 
